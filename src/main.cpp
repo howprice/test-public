@@ -21,5 +21,6 @@ int main()
 
     foo(123, 456);
     printf("Sum = %d\n", sum(3, 4));
+    printf("Sum = %d\n", sum(6, 9));
     return 0;
 }
