@@ -7,6 +7,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the main executable
 add_executable(
-    main 
+    main
+    "src/Helpers.h"
     "src/main.cpp"
 )
+
+# Compiler-specific options
+if(MSVC)
+	target_compile_options(
+		main
+		PRIVATE
+		/W4 
+	)
+endif()
