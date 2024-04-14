@@ -5,7 +5,12 @@
 static void foo(int x, int y)
 {
     HP_UNUSED(y);
-    printf("x = %d", x);
+    printf("x = %d\n", x);
+}
+
+static int sum(int x, int y)
+{
+    return x + y;
 }
 
 int main() 
@@ -15,5 +20,6 @@ int main()
     printf("Let's see what happens.\n");
 
     foo(123, 456);
+    printf("Sum = %d\n", sum(3, 4));
     return 0;
 }
